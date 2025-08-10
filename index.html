@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cell Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Cell vs Bacteria</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="ui">
     <div id="score">Score: 0</div>
     <div id="size">Size: 0</div>
+    <div id="leaderboard"></div>
     <button id="restart">Restart</button>
-    <div id="instructions">Move mouse to move • Eat organelles to grow • Avoid bigger cells</div>
-  </div>
-
-  <div class="side-ui">
-    <div id="leaderboard-title">Leaderboard</div>
-    <ol id="leaderboard"></ol>
+    <div id="instructions">Move mouse (desktop) or drag (mobile) to move • Eat food to grow</div>
   </div>
 
   <canvas id="game"></canvas>
-  <canvas id="minimap" width="240" height="160" aria-label="minimap"></canvas>
+  <canvas id="minimap"></canvas>
 
   <script src="game.js"></script>
 </body>
