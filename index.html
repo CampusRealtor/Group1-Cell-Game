@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cell Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ui">
+    <div id="score">Score: 0</div>
+    <div id="size">Size: 0</div>
+    <button id="restart">Restart</button>
+    <div id="instructions">Move mouse to move • Eat organelles to grow • Avoid bigger cells</div>
+  </div>
+
+  <div class="side-ui">
+    <div id="leaderboard-title">Leaderboard</div>
+    <ol id="leaderboard"></ol>
+  </div>
+
+  <canvas id="game"></canvas>
+  <canvas id="minimap" width="240" height="160" aria-label="minimap"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
